@@ -86,9 +86,8 @@
     gnumake
 
     # Development — Haskell
-    haskell.compiler.native-bignum.ghc9103
-    haskellPackages.haskell-language-server
-    haskellPackages.cabal-install
-    stack
+    (haskell.packages.ghc9122.ghcWithPackages (ps: []))
+    haskell.packages.ghc9122.haskell-language-server
+    haskell.packages.ghc9122.cabal-install
   ];
 }
