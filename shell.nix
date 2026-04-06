@@ -14,6 +14,10 @@
 
       eval "$(zoxide init zsh)"
 
+      evim() {
+        neovide "$@" > /dev/null 2>&1 &!
+      }
+
       extract () {
         if [ -f "$1" ] ; then
           case "$1" in

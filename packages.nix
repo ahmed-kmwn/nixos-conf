@@ -27,7 +27,7 @@
     aria2
     xclip
     fastfetch
-    htop
+    neovide
     btop
     git
     fzf
@@ -39,8 +39,11 @@
     pstree
     httrack
     nmap
+    obsidian
     calibre
-
+    joplin-desktop
+    cherrytree
+    logseq
     # Media
     vlc
     yt-dlp
@@ -55,11 +58,7 @@
     xfce.xfce4-power-manager
     xfce.xfce4-battery-plugin
     xfce.xfce4-netload-plugin
-
-    # Theming
-    lxappearance
-    qt6Packages.qt6ct
-    adwaita-qt6
+    flameshot
 
     # Laptop
     brightnessctl
@@ -86,7 +85,7 @@
     gnumake
 
     # Development — Haskell
-    (haskell.packages.ghc9122.ghcWithPackages (ps: []))
+    (haskell.packages.ghc9122.ghcWithPackages (ps: [ ]))
     haskell.packages.ghc9122.haskell-language-server
     haskell.packages.ghc9122.cabal-install
   ];

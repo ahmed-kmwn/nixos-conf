@@ -41,6 +41,10 @@
 
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
+  networking.nameservers = [
+    "8.8.8.8"
+    "1.1.1.1"
+  ];
 
   # ============================================================
   # Programs & Services
@@ -127,6 +131,11 @@
       naturalScrolling = true;
       middleEmulation = true;
     };
+  };
+
+  programs.appimage = {
+    enable = true;
+    binfmt = true;
   };
 
   # ============================================================

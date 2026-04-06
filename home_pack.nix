@@ -4,6 +4,5 @@
   # home Packages
   # ============================================================
 
-  home.packages = with pkgs; [
-  ];
+  home.packages = [ ];
 }
