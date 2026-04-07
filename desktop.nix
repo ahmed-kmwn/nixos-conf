@@ -18,27 +18,27 @@
   # Display Manager (Greeter)
   # ============================================================
 
-  #  services.greetd = {
-  #    enable = true;
-  #    settings = {
-  #      default_session = {
-  #        command = "tuigreet --time --cmd 'startxfce4'";
-  #        user = "greeter";
-  #      };
-  #    };
-  #  };
-  #
-  #  systemd.services.greetd.serviceConfig = {
-  #    Type = "idle";
-  #    StandardInput = "tty";
-  #    StandardOutput = "null";
-  #    StandardError = "journal";
-  #    TTYReset = true;
-  #    TTYVHangup = true;
-  #    TTYVTDisallocate = true;
-  #  };
+    services.greetd = {
+      enable = true;
+      settings = {
+        default_session = {
+          command = "tuigreet --time --cmd 'startxfce4'";
+          user = "greeter";
+        };
+      };
+    };
+  
+    systemd.services.greetd.serviceConfig = {
+      Type = "idle";
+      StandardInput = "tty";
+      StandardOutput = "null";
+      StandardError = "journal";
+      TTYReset = true;
+      TTYVHangup = true;
+      TTYVTDisallocate = true;
+    };
 
-  services.displayManager.ly.enable = true;
+  #services.displayManager.ly.enable = true;
 
   # ============================================================
   # Environment Variables (System-wide)
