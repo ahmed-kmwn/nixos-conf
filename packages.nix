@@ -9,7 +9,7 @@
     pavucontrol
 
     # Gaming
-    polymc
+    #polymc
 
     # Extract & Archive
     unzip
@@ -39,11 +39,9 @@
     pstree
     httrack
     nmap
-    obsidian
     calibre
-    joplin-desktop
-    cherrytree
     logseq
+
     # Media
     vlc
     yt-dlp
@@ -64,25 +62,22 @@
     brightnessctl
 
     # Containers & Tools
-    distrobox
-    nix-output-monitor
+    #distrobox
+    #nix-output-monitor
 
     # Browser
     google-chrome
 
-    # Network
-    riseup-vpn
-
     # Development — Rust
-    rustc
+    #rustc
 
     # Development — OCaml
     ocaml
     opam
 
     # Development — C
-    gcc
-    gnumake
+    #gcc
+    #gnumake
 
     # Development — Haskell
     (haskell.packages.ghc9122.ghcWithPackages (ps: [ ]))
