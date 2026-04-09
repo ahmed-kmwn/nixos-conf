@@ -41,10 +41,7 @@
 
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
-  networking.nameservers = [
-    "8.8.8.8"
-    "1.1.1.1"
-  ];
+  services.cloudflare-warp.enable = true;
 
   # ============================================================
   # Programs & Services

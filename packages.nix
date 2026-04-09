@@ -9,7 +9,7 @@
     pavucontrol
 
     # Gaming
-    #polymc
+    polymc
 
     # Extract & Archive
     unzip
@@ -48,6 +48,7 @@
 
     # Desktop
     plank
+    greybird
     papirus-icon-theme
     xfce.xfce4-pulseaudio-plugin
     xfce.xfce4-screenshooter
@@ -57,27 +58,28 @@
     xfce.xfce4-battery-plugin
     xfce.xfce4-netload-plugin
     flameshot
+    cloudflare-warp
 
     # Laptop
     brightnessctl
 
     # Containers & Tools
     #distrobox
-    #nix-output-monitor
+    nix-output-monitor
 
     # Browser
     google-chrome
 
     # Development — Rust
-    #rustc
+    rustc
 
     # Development — OCaml
     ocaml
     opam
 
     # Development — C
-    #gcc
-    #gnumake
+    gcc
+    gnumake
 
     # Development — Haskell
     (haskell.packages.ghc9122.ghcWithPackages (ps: [ ]))

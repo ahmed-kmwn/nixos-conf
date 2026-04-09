@@ -18,36 +18,30 @@
   # Display Manager (Greeter)
   # ============================================================
 
-    services.greetd = {
-      enable = true;
-      settings = {
-        default_session = {
-          command = "tuigreet --time --cmd 'startxfce4'";
-          user = "greeter";
-        };
-      };
-    };
-  
-    systemd.services.greetd.serviceConfig = {
-      Type = "idle";
-      StandardInput = "tty";
-      StandardOutput = "null";
-      StandardError = "journal";
-      TTYReset = true;
-      TTYVHangup = true;
-      TTYVTDisallocate = true;
-    };
-
-  #services.displayManager.ly.enable = true;
-
-  # ============================================================
-  # Environment Variables (System-wide)
-  # ============================================================
-
-  environment.variables = {
-    GTK_THEME = "Adwaita:dark";
-    QT_QPA_PLATFORMTHEME = "qt6ct";
-  };
+  #  services.greetd = {
+  #    enable = true;
+  #    settings = {
+  #      default_session = {
+  #        command = "${pkgs.tuigreet}/bin/tuigreet --time --remember --cmd '${pkgs.dbus}/bin/dbus-run-session startxfce4'";
+  #        user = "greeter";
+  #      };
+  #    };
+  #  };
+  #
+  #  systemd.services.greetd.serviceConfig = {
+  #    Type = "idle";
+  #    StandardInput = "tty";
+  #    StandardOutput = "tty";
+  #    StandardError = "journal";
+  #    TTYReset = true;
+  #    TTYVHangup = true;
+  #    TTYVTDisallocate = true;
+  #  };
+  #  users.users.greeter.extraGroups = [
+  #    "video"
+  #    "input"
+  #  ];
+  services.displayManager.ly.enable = true;
 
   # ============================================================
   # System Auto-Upgrade
