@@ -41,7 +41,10 @@
 
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
-  services.cloudflare-warp.enable = true;
+  networking.nameservers = [
+    "8.8.8.8"
+    "1.1.1.1"
+  ];
 
   # ============================================================
   # Programs & Services
@@ -115,6 +118,7 @@
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
     nerd-fonts.symbols-only
+    cantarell-fonts
   ];
 
   # ============================================================

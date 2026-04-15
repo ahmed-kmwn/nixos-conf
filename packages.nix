@@ -58,8 +58,7 @@
     xfce.xfce4-battery-plugin
     xfce.xfce4-netload-plugin
     flameshot
-    cloudflare-warp
-
+    protonvpn-gui
     # Laptop
     brightnessctl
 

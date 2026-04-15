@@ -44,6 +44,7 @@
     xsettings = {
       "Net/ThemeName" = "Adwaita-dark";
       "Net/IconThemeName" = "Papirus-Dark";
+      "Gtk/FontName" = "Cantarell Regular 10";
     };
   };
 
