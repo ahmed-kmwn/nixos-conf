@@ -53,6 +53,7 @@
       fz = "fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'";
       ls = "eza -l --icons --group-directories-first";
       download = "aria2c -x 16 -s 16 -c -d ~/Downloads --download-result=full --summary-interval=0";
+      clean-nixos = "sudo nix-collect-garbage -d && nix-store --optimize";
     };
   };
 }

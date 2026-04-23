@@ -11,12 +11,15 @@
     extraGroups = [
       "networkmanager"
       "wheel"
+      "docker"
     ];
 
     shell = pkgs.zsh;
 
     packages = [ ];
   };
+
+  virtualisation.docker.enable = true;
 
   # ============================================================
   # shell

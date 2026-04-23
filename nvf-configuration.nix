@@ -91,6 +91,33 @@
             action = ":Telescope oldfiles<CR>";
             silent = true;
           }
+          # Terminal toggle - زي VS Code ctrl+`
+          {
+            key = "<C-`>";
+            mode = "n";
+            action = ":ToggleTerm<CR>";
+            silent = true;
+          }
+          {
+            key = "<C-`>";
+            mode = "t";
+            action = "<cmd>ToggleTerm<CR>";
+            silent = true;
+          }
+          # بديل لو الـ backtick مش شغال
+          {
+            key = "<leader>t";
+            mode = "n";
+            action = ":ToggleTerm<CR>";
+            silent = true;
+          }
+          # للخروج من terminal mode برسعة
+          {
+            key = "<Esc>";
+            mode = "t";
+            action = "<C-\\><C-n>";
+            silent = true;
+          }
         ];
 
         lsp = {
@@ -131,6 +158,19 @@
         statusline.lualine.enable = true;
         telescope.enable = true;
         binds.whichKey.enable = true;
+
+        # Terminal - toggleterm زي VS Code
+        terminal.toggleterm = {
+          enable = true;
+          setupOpts = {
+            size = 15;
+            direction = "horizontal";
+            shade_terminals = true;
+            start_in_insert = true;
+            persist_size = true;
+            close_on_exit = true;
+          };
+        };
       };
     };
   };

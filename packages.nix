@@ -40,7 +40,8 @@
     httrack
     nmap
     calibre
-    logseq
+    obsidian
+    zathura
 
     # Media
     vlc
@@ -65,6 +66,7 @@
     # Containers & Tools
     #distrobox
     nix-output-monitor
+    docker-compose
 
     # Browser
     google-chrome
