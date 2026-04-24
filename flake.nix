@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
     nvf.url = "github:notashelf/nvf";
-    polymc.url = "github:PolyMC/PolyMC";
+    #    polymc.url = "github:PolyMC/PolyMC";
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -29,9 +29,9 @@
           inherit inputs;
         };
         modules = [
-          {
-            nixpkgs.overlays = [ inputs.polymc.overlay ];
-          }
+          #          {
+          #            nixpkgs.overlays = [ inputs.polymc.overlay ];
+          #          }
           ./configuration.nix
           nvf.nixosModules.default
           ./nvf-configuration.nix

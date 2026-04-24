@@ -8,9 +8,6 @@
     pulseaudio
     pavucontrol
 
-    # Gaming
-    polymc
-
     # Extract & Archive
     unzip
     unrar
@@ -22,7 +19,6 @@
     exfatprogs
 
     # Utilities
-    vim
     wget
     aria2
     xclip
@@ -59,28 +55,26 @@
     xfce.xfce4-battery-plugin
     xfce.xfce4-netload-plugin
     flameshot
-    protonvpn-gui
+
     # Laptop
     brightnessctl
 
     # Containers & Tools
-    #distrobox
     nix-output-monitor
-    docker-compose
 
     # Browser
     google-chrome
 
     # Development — Rust
-    rustc
+    #    rustc
 
     # Development — OCaml
-    ocaml
-    opam
+    #    ocaml
+    #    opam
 
     # Development — C
-    gcc
-    gnumake
+    #    gcc
+    #    gnumake
 
     # Development — Haskell
     (haskell.packages.ghc9122.ghcWithPackages (ps: [ ]))
