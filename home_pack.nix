@@ -46,6 +46,11 @@
       "Net/IconThemeName" = "Papirus-Dark";
       "Gtk/FontName" = "Cantarell Regular 10";
     };
+    xfce4-xkb-plugin = {
+      "settings/display-type" = 2;
+      "settings/display-name" = true;
+      "settings/group-policy" = 0;
+    };
   };
 
   home.packages = with pkgs; [ ];

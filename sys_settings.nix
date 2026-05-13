@@ -54,7 +54,7 @@
   # ============================================================
 
   programs.fzf.fuzzyCompletion = true;
-  programs.firefox.enable = false;
+  programs.firefox.enable = true;
   programs.mtr.enable = true;
   programs.dconf.enable = true;
 

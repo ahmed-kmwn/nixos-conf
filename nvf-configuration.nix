@@ -8,6 +8,19 @@
         registers = "unnamedplus";
       };
 
+      vim.extraPlugins = {
+        lean-nvim = {
+          package = pkgs.vimPlugins.lean-nvim;
+          setup = ''
+            require('lean').setup({
+              abbreviations = { builtin = true },
+              lsp = { enable = true },
+              mappings = true,
+            })
+          '';
+        };
+      };
+
       vim = {
         globals = {
           neovide_cursor_vfx_mode = "railgun";

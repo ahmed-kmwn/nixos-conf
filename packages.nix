@@ -4,6 +4,14 @@
   # System Packages
   # ============================================================
   environment.systemPackages = with pkgs; [
+
+    #nixos tools
+    nvd
+    nix-tree
+    nixpkgs-fmt
+    nix-du
+    comma
+
     # Audio
     pulseaudio
     pavucontrol
@@ -36,8 +44,10 @@
     httrack
     nmap
     calibre
+    joplin-desktop
     obsidian
     zathura
+    #polymc
 
     # Media
     vlc
@@ -47,6 +57,7 @@
     plank
     greybird
     papirus-icon-theme
+    xfce.xfce4-xkb-plugin
     xfce.xfce4-pulseaudio-plugin
     xfce.xfce4-screenshooter
     xfce.xfce4-whiskermenu-plugin
@@ -66,15 +77,18 @@
     google-chrome
 
     # Development — Rust
-    #    rustc
+    rustc
+
+    # Development — lean4
+    lean4
 
     # Development — OCaml
-    #    ocaml
-    #    opam
+    ocaml
+    opam
 
     # Development — C
-    #    gcc
-    #    gnumake
+    gcc
+    gnumake
 
     # Development — Haskell
     (haskell.packages.ghc9122.ghcWithPackages (ps: [ ]))
